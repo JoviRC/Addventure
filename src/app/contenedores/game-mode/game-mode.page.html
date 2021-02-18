@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="header">
+            <a (click)="backClicked()" class="aBack">
+                <img class="imgBack"
+                    src="../../../assets/img/back.png"
+                    alt="">
+            </a>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<body class="background">
+    <div class="wrap">
+        <div class="divGames">
+            <div class="divGameOne">
+                <a (click)="fnRouterGameOne()" class="aGameOne">
+                    <img class="imgGameOne"
+                        src="../../../assets/img/gameOne.jpg"
+                        alt="Hora de Contar">
+                </a>
+            </div>
+            <div class="divGameTwo">
+                <a (click)="fnRouterGameTwo()" class="aGameTwo">
+                    <img class="imgGameTwo"
+                        src="../../../assets/img/gameTwo.png"
+                        alt="Hora de Sumar y Restar">
+                </a>
+            </div>
+            <div class="divGameThree">
+                <a (click)="fnRouterGameThree()" class="imgGameThree">
+                    <img class="imgGameThree"
+                        src="../../../assets/img/gameThree.png"
+                        alt="Quiz">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<footer *ngFor="let usuario of arUsers" >
+    <a (click)="fnRuterMision()" class="mision-button">
+        <img class="imgMision"
+            src="../../../assets/img/logoMisiones.png"
+            alt="">
+    </a>
+    <a (click)="fnRuterPerfil()" (click)="fnLevel(usuario)" class="perfil-button">
+        <img class="imgPerfil"
+            src="../../../assets/img/perfilUsuario.png"
+            alt="">
+    </a>
+
+</footer>

@@ -1,0 +1,84 @@
+.header {
+     display: grid;
+ }
+ 
+ .logoHeader {
+     grid-row: 1;
+     height: 40px;
+     width: auto;
+     margin: auto;
+     margin-left: 21%;
+ }
+ 
+ .aBack {
+     grid-row: 1;
+     width: 2.5rem;
+     height: auto;
+ }
+ 
+ .imgBack {
+     float: left;
+     margin: auto;
+     display: flex;
+ }
+ 
+ //--------------------------------------
+ 
+ body {
+     position: relative;
+ }
+ 
+ .background {
+     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+     background-size: 400% 400%;
+     animation: gradient 15s ease infinite;
+ }
+ 
+ .wrap {
+     display: flex;
+     padding-top: 35vh;
+     padding-left: 1rem;
+     padding-right: 1rem;
+ 
+ }
+ //------------------------------
+ .divContent{
+     background-color: white;
+     border-radius: 1rem;
+     margin: auto;
+     display: block;
+ 
+ }
+ h3{
+     color: #23d5ab;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 1vh;
+     margin-bottom: 1vh;
+     text-align: center;
+     
+ }
+ img{
+     height: auto;
+     width: 90vw;
+     margin: auto;
+ }
+ 
+ 
+ 
+ 
+ //------------------------------
+ 
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+ 
+     50% {
+         background-position: 100% 50%;
+     }
+ 
+     100% {
+         background-position: 0% 50%;
+     }
+ }

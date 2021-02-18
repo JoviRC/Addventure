@@ -1,0 +1,8 @@
+{
+  "name": "Addventure",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

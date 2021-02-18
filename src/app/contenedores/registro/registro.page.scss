@@ -1,0 +1,123 @@
+body {
+    position: relative;
+}
+
+.wrap{
+    background-color: #ffffff;
+    border-radius: 2vh;
+    margin: 1rem;
+    margin-top: 1rem;
+    padding: 0vh;
+    height: 93%;
+}
+.wrap-titulo{
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: scroll ;
+    height: 80%;
+    margin-bottom: 1rem;
+}
+.wrap-content{
+    height: auto; 
+    display: block;
+}
+.background {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+.itemRegister{
+    padding-top: 1rem;
+}
+h3{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: blueviolet;
+}
+.itemBtn{
+    padding: 0vh;
+    margin: 0vh;
+}
+
+.btnSubmit{
+    grid-row: 1;
+    float: left;
+    height: 3rem;
+    width: 50%;
+    background-color: #e73c7e;
+    border-bottom-left-radius: 1rem;
+    color: #ffffff;
+    font-size: 2.5vh;
+    margin-top: 1rem;
+    float: inline-end;
+
+}
+.btnBack{
+    grid-row: 2;
+    float: right;
+    height: 3rem;
+    width: 50%;
+    background-color: #23a6d5;
+    border-bottom-right-radius: 1rem;
+    color: #ffffff;
+    font-size: 2.5vh;
+    margin-top: 1rem;
+    float: inline-end;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 91%;
+    height: auto;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .modalDatos {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-contenido-datos {
+    background-color: #ffffffc0;
+    width: 40vh;
+    padding: 10px 20px;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.h1Info {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

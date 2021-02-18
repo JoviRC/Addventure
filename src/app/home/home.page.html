@@ -1,0 +1,23 @@
+<ion-header class="header">
+    <ion-toolbar>
+        <img class="logoHeader" src="../../assets/img/logo.png" alt="">
+    </ion-toolbar>
+</ion-header>
+
+<body class="background">
+
+    <div class="wrap">
+        <a (click)="fnRuterPlay()" class="rainbow-button">
+            <img class="btnJugar" src="../../assets/img/botonJugar.png" alt="">
+        </a>
+    </div>
+    <footer  *ngFor="let usuario of arUsers" >
+        <a (click)="fnRuterMision()" class="mision-button">
+            <img class="imgMision" src="../../assets/img/logoMisiones.png" alt="alguna wea">
+        </a>
+        <a (click)="fnRuterPerfil()" (click)="fnLevel(usuario)" class="perfil-button">
+            <img class="imgPerfil" src="../../assets/img/perfilUsuario.png" alt="">
+        </a>
+    </footer>
+
+</body>

@@ -1,0 +1,96 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="header">
+            <a (click)="fnConfirmBtnClose()" class="aClose">
+                <img class="imgClose"
+                    src="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/close-button.png?alt=media&token=e4446a32-79b4-4571-a888-5883e9b6e6b7"
+                    alt="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/close-button.png?alt=media&token=e4446a32-79b4-4571-a888-5883e9b6e6b75">
+            </a>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+
+<body class="background">
+    <!-- div block -->
+    <div class="wrap">
+        <!-- div superior  -->
+        <div class="divInfo">
+            <div class="divEtapa">
+                <img class="imgNumLevel" [src]="'../../../../../assets/img/'+currentGame+'.png'">
+                <h3>/</h3>
+                <img class="imgNumTotal" [src]="'../../../../../assets/img/3.png'">
+            </div>
+            <div class="divLevel">
+                <img class="imgLevel" src="../../../../../assets/img/levelOne.png">
+            </div>
+        </div>
+        <!-- div central -->
+        <div class="divOpe">
+            <img [src]="'../../../../../assets/imgNumAnimales/'+numOne+'.png'" alt="{{numOne}}" class="imgOpe1">
+            <h1 class="h1Ope">{{ope}}</h1>
+            <img [src]="'../../../../../assets/imgNumAnimales/'+numTwo+'.png'" alt="{{numOne}}" class="imgOpe2">
+        </div>
+        <!-- div btn -->
+        <div class="divBtn ">
+            <button class="btnOne " (click)="  fnSelectBtnOne()">
+                <img class="imgBtns" [src]="'../../../../../assets/img/'+arBtn[0]+'.png'" alt="puta la wea">
+            </button>
+            <button class="btnTwo" (click)="  fnSelectBtnTwo()">
+                <img class="imgBtns" [src]="'../../../../../assets/img/'+arBtn[1]+'.png'" alt="puta la wea">
+            </button>
+        </div>
+    </div> <!-- div wrap-->
+    <!-- Modal True-->
+    <div id="modalTrue" class="modal">
+        <div class="modal-contenido">
+            <div class="divCorrecto">
+                <img class="imgTrueModal" [src]="'../../../../../assets/img/bueno.png'" alt="'correcto'">
+                <img [src]="'../../../../../assets/imgNumAnimales/'+numOne+'.png'" alt="{{numOne}}" class="imgOpe1Modal">
+                <h1 class="h1OpeModal">{{ope}}</h1>
+                <img [src]="'../../../../../assets/imgNumAnimales/'+numTwo+'.png'" alt="{{numOne}}" class="imgOpe2Modal">
+                <h1 class="h1IgualModal">=</h1>
+                <img class="imgNumModal" [src]="'../../../../../assets/img/'+numTotal+'.png'" alt="'img num'">
+            </div>
+            <div class="divCoin">
+                <img src="../../../../../assets/coin.gif" alt="" class="coin">
+                <h3 class="h3Coins" id="h3Coins">25</h3>
+              </div>
+        </div>
+    </div>
+    <!-- Modal False-->
+    <div id="modalFalse" class="modal">
+        <div class="modal-contenido">
+            <div class="divCorrecto">
+                <img class="imgTrueModal" [src]="'../../../../../assets/img/mala.png'" alt="'correcto'">
+                <img [src]="'../../../../../assets/imgNumAnimales/'+numOne+'.png'" alt="{{numOne}}" class="imgOpe1Modal">
+                <h1 class="h1OpeModal">{{ope}}</h1>
+                <img [src]="'../../../../../assets/imgNumAnimales/'+numTwo+'.png'" alt="{{numOne}}" class="imgOpe2Modal">
+                <h1 class="h1IgualModal">=</h1>
+                <img class="imgNumModal" [src]="'../../../../../assets/img/'+numTotal+'.png'" alt="'img num'">
+            </div>
+            <div class="divCoin">
+                <img src="../../../../../assets/coin.gif" alt="" class="coin">
+                <h3 class="h3Coins" id="h3Coins">0</h3>
+              </div>
+        </div>
+    </div>
+    <!-- Modal Level Up -->
+    <div id="modalLevelTwo" class="modal-level">
+        <div class="modal-contenido-two">
+            <img [src]="'../../../../../assets/img/levelTwo.png'" alt="img level up" class="imgLevelTwo">
+        </div>
+    </div>
+
+    <div id="modalClose" class="modalClose">
+        <div class="modal-contenido-close">
+          <div class="divClose">
+            <h1 class="h1Confirm">¿Salir?</h1>
+          </div>
+          <div class="divBtnClose">
+            <button class="btnYes " (click)="fnBtnModalYes()"><h2 style="color: white; margin: auto;" >Si</h2></button>
+            <button class="btnNo"  (click)="fnBtnModalNo()"><h2 style="color: white; margin: auto;" >No</h2></button>
+          </div>
+        </div>
+      </div>
+</body>

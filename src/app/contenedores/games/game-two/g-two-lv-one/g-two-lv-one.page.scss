@@ -1,0 +1,423 @@
+        .header {
+            display: grid;
+        }
+
+        .aClose {
+            grid-row: 1;
+            width: 5vw;
+            margin-left: 2vw;
+            height: auto;
+        }
+
+        .imgClose {
+            float: left;
+            margin: auto;
+            display: flex;
+        }
+
+        //-------------------------
+        body {
+            position: relative;
+        }
+
+        .background {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        .wrap {
+            display: block;
+        }
+
+        //------------------
+        .divInfo {
+            background-color: rgba(255, 255, 255, 0.575);
+            display: grid;
+            height: auto;
+            width: 90vw;
+            margin: auto;
+            border-radius: 1rem;
+            margin-top: 1rem;
+
+        }
+
+        .divEtapa {
+            grid-row: 1;
+            grid-column: 1;
+            padding: auto;
+            display: grid;
+
+        }
+
+        .divLevel {
+            grid-row: 1;
+            grid-column: 2;
+            margin: auto;
+        }
+
+        h3 {
+            text-align: center;
+            grid-row: 1;
+            font-size: 6vh;
+            color: darkblue;
+
+        }
+
+        .imgLevel {
+            height: 9vh;
+            width: auto;
+            margin: auto;
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .imgNumLevel {
+            height: 4vh;
+            width: auto;
+            margin-left: auto;
+            margin-right: 0vw;
+            margin-top: auto;
+            margin-bottom: auto;
+            grid-row: 1;
+            grid-column: 1;
+            float: right;
+        }
+
+        .imgNumTotal {
+            height: 4vh;
+            width: auto;
+            margin-right: 0vw;
+            margin-top: auto;
+            margin-bottom: auto;
+            grid-row: 1;
+            grid-column: 3;
+            float: left;
+        }
+
+        //----------------------------------
+        .divOpe {
+            display: grid;
+            height: auto;
+            width: 90vw;
+            margin: 3vw auto;
+            padding: 1vw;
+            background-color: #ffffff8e;
+            border-radius: 1rem;
+        }
+
+        .imgOpe1 {
+            height: 22vh;
+            width: auto;
+            grid-row: 1;
+            grid-column: 1;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .h1Ope {
+            height: 20vw;
+            width: auto;
+            grid-row: 2;
+            grid-column: 1;
+            margin: auto;
+            font-size: 20vw;
+            color: rgb(3, 3, 3);
+        }
+
+        .imgOpe2 {
+            height: 22vh;
+            width: auto;
+            grid-row: 3;
+            grid-column: 1;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        //----------------------------------
+        .divBtn {
+            display: grid;
+            margin: auto;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            height: 20vh;
+        }
+
+        .btnOne {
+            margin: auto;
+            grid-row: 1;
+            grid-column: 1;
+            border-radius: 1rem;
+            width: 35vw;
+            height: 15vh;
+        }
+
+        .btnTwo {
+            width: 35vw;
+            height: 15vh;
+            margin: auto;
+            grid-row: 1;
+            grid-column: 2;
+            border-radius: 1rem;
+            padding: 2%;
+        }
+
+        .btnOne:focus {
+            outline: none;
+            -webkit-animation: jello-horizontal 0.7s both;
+            animation: jello-horizontal 0.7s both;
+        }
+
+        .btnTwo:focus {
+            outline: none;
+            -webkit-animation: jello-horizontal 0.7s both;
+            animation: jello-horizontal 0.7s both;
+        }
+
+        .imgBtns {
+            width: auto;
+            height: 13vh;
+        }
+
+        //--------------------------------- Modals
+        //---------- Modal True - False
+        .modal-contenido {
+            background-color: #ffffff88;
+            width: 40vh;
+            padding: 10px 20px;
+            margin-top: 20vh;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            border-radius: 1rem;
+        }
+
+        .modal {
+            background-color: rgba(0, 0, 0, 0.884);
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 1s;
+        }
+
+        .imgTrueModal {
+            height: auto;
+            width: 30vw;
+            grid-row: 1;
+            grid-column: 2;
+            margin: auto;
+            display: block;
+        }
+
+        .divCorrecto {
+            display: grid;
+        }
+
+        .imgOpe1Modal {
+            grid-row: 2;
+            grid-column: 1;
+            margin: auto;
+            height: auto;
+            width: 20vw;
+        }
+
+        .h1OpeModal {
+            grid-row: 3;
+            grid-column: 1;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            font-size: 7vh;
+        }
+
+        .imgOpe2Modal {
+            grid-row: 4;
+            grid-column: 1;
+            margin: auto;
+            height: auto;
+            width: 20vw;
+        }
+
+        .h1IgualModal {
+            grid-row: 3;
+            grid-column: 2;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            font-size: 10vh;
+            color: #00cf3e;
+        }
+
+        .imgNumModal {
+            height: 10vh;
+            width: auto;
+            grid-row: 3;
+            grid-column: 3;
+            margin: auto;
+        }
+
+        //-------------- Modal Level Up
+        .modal-contenido-two {
+            background-color: #ffffff00;
+            width: 40vh;
+            padding: 10px 20px;
+            margin-top: 35vh;
+            margin-bottom: 40vh;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            border-radius: 1rem;
+        }
+
+        .modal-level {
+            background-color: rgba(0, 0, 0, .8);
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s;
+        }
+
+        .imgLevelTwo {
+            -webkit-animation: jello-horizontal 0.7s infinite;
+            animation: jello-horizontal 0.7s infinite;
+            animation-delay: 0.8s;
+        }
+
+        //--------------------------
+        .divCoin {
+            display: grid;
+        }
+
+        .coin {
+            grid-row: 1;
+            grid-column: 1;
+            margin-left: -5vh;
+        }
+
+        .h3Coins {
+            grid-row: 1;
+            grid-column: 2;
+            margin-left: -20vh;
+            margin-top: 5vh;
+            color: #fcac00;
+        }
+        //---------------------------
+
+.modalClose {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-contenido-close {
+    background-color: #ffffffc0;
+    width: 40vh;
+    padding: 10px 20px;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.h1Confirm {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnYes {
+    height: 5vh;
+    width: 30vw;
+    border-radius: 1rem;
+    background-color: #23a6d5;
+    outline: none;
+}
+.btnYes:active{
+    height: 4.5vh;
+    width: 29vw;
+}
+.btnNo {
+    height: 5vh;
+    width: 30vw;
+    border-radius: 1rem;
+    background-color: #e73c7e;
+    outline: none;
+}
+.btnNo:active{
+    height: 4.5vh;
+    width: 29vw;
+}
+
+
+
+        //---------------------------------- Keyframes
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @-webkit-keyframes jello-horizontal {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }

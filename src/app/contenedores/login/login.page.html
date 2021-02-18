@@ -1,0 +1,29 @@
+<body class="background">
+
+    <div class="wrap">
+        <img class="imgLogo"
+            src="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/Login.png?alt=media&token=6d3c5fc0-9eeb-47f4-9857-ac7859ad96c2">
+        <ion-item class="itemLogin">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+        </ion-item>
+        <ion-item class="itemLogin">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="pass" (keyup.enter)="onSubmintLogin()" required>
+            </ion-input>
+        </ion-item>
+        <item class="itemBtn">
+            <button class="btnSubmit" (click)="onSubmintLogin()" expand="block" color="tertiary">Entrar</button>
+            <button class="btnRegister" routerLink="/registro">Registro</button>
+        </item>
+
+    </div>
+    <div id="modalClose" class="modalClose">
+        <div class="modal-contenido-close">
+          <div class="divClose">
+            <h1 class="h1Confirm">Usuario y contraseña no coinciden </h1>
+          </div>
+        </div>
+      </div>
+
+</body>

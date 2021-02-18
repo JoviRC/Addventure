@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="header">
+            <a (click)="backClicked()" class="aBack">
+                <img class="imgBack"
+                    src="../../../assets/img/back.png"
+                    alt="">
+            </a>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<body class="background">
+    <div class="wrap">
+        <div class="divMisionesWrap">
+            <div class="divMision" *ngFor="let intMision of arDatosMis">
+                <div class="MisClick"  (click)="fnRedireccion(intMision)" >
+                    <div class="gridIzq">
+                        <h1 class="h1Jugar">¡Juega!</h1>
+                        <p class="h3Gana">Recompensa:</p>
+                        <div class="recom">
+                            <img src="../../../assets/coin.gif" alt="" class="imgCoin">
+                            <h1 class="h1Coins">{{intMision.coin}}</h1>
+                        </div>
+                    </div>
+                    <div class="gridDerecha">
+                        <img src="../../../assets/img/{{intMision.tipoJuego}}.png" alt="" class="imgTipo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+
+    <a (click)="fnRuterPlay()" class="play-button">
+        <img class="imgPlay"
+            src="../../../assets/img/botonJugar.png"
+            alt="">
+    </a>
+
+</footer>

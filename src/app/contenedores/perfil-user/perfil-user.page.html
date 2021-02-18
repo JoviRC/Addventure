@@ -1,0 +1,80 @@
+<ion-header class="headre">
+    <ion-toolbar>
+        <div class="header">
+            <a (click)="backClicked()" class="aBack">
+                <img  class="imgBack"
+                    src="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/back.png?alt=media&token=18891762-d62e-4ab5-8fa5-c0c3decb3185"
+                    alt="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/back.png?alt=media&token=18891762-d62e-4ab5-8fa5-c0c3decb3185">
+            </a>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<body  class="background">
+    <div class="divUser" *ngFor="let usuario of arUsers">
+        <div class="divImg">
+            <img class="imgAvatar" src="../../../assets/img/{{usuario.imgPerfil}}" alt="../../../assets/img/{{usuario.imgPerfil}}">
+        </div>
+        <div class="divUserInfo">
+            <div class="divName">
+                <h1 class="h1Name">{{usuario.nomAlumn}} {{usuario.apeAlumn}}</h1>
+            </div>
+            <div class="divLevel" (onload)="testExp(usuario)">
+                <h2 class="h2Nivel">Nivel: </h2>
+                <h1 class="h1Nivel">{{usuario.level}}</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divInfo" *ngFor="let usuario of arUsers">
+        <ion-item>
+            <h2 class="h2Info">Apoderado: </h2>
+            <h3 class="h3Info" slot="end">{{usuario.nomApod}} {{usuario.apeApod}}</h3>
+        </ion-item>
+
+        <ion-item>
+            <h2 class="h2Info">Curso: </h2>
+            <h3 class="h3Info" slot="end">{{usuario.cursoAlumn}}</h3>
+        </ion-item>
+        <ion-item>
+            <h2 class="h2Info">Colegio: </h2>
+            <h3 class="h3Info" slot="end">{{usuario.school}}</h3>
+        </ion-item>
+        <ion-item>
+            <h2 class="h2Info">Monedas: </h2>
+            <h3 class="h3Info" slot="end" style="color: rgb(228, 175, 0);" >{{usuario.coin}}</h3>
+        </ion-item>
+    </div>
+    <div class="divRecompensa" (click)="fnRuterRecompensas()">
+        <img src="../../../assets/coin.gif" alt="" class="imgCoinOne">
+        <h3 class="h3Recompensa">RECOMPENSAS</h3>
+        <img src="../../../assets/coin.gif" alt="" class="imgCoinTwo">
+    </div>
+    <div id="modalClose" class="modalClose">
+        <div class="modal-contenido-close">
+          <div class="divClose">
+            <h1 class="h1Confirm">Desconectarse</h1>
+          </div>
+          <div class="divBtnClose">
+            <button class="btnYes " (click)="Onlogout()"><h2 style=" margin: auto;"  class="h2Si">Si</h2></button>
+            <button class="btnNo"  (click)="fnNO()"><h2 style=" margin: auto;" class="h2No" >No</h2></button>
+          </div>
+        </div>
+      </div>
+    <footer>
+        <a (click)="fnRuterMision()" class="mision-button">
+            <img class="imgMision"
+                src="../../../assets/img/logoMisiones.png"
+                alt="">
+        </a>
+        <a (click)="fnModallogout()" class="logOut-button">
+            <img class="imgLogOut"
+                src="../../../assets/img/apagar.png"
+                alt="">
+        </a>
+
+    </footer>
+
+
+</body>

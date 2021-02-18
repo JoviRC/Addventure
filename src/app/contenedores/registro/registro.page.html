@@ -1,0 +1,81 @@
+<body class="background">
+
+    <div class="wrap">
+        <br>
+        <h3>Registro</h3>
+        <div class="wrap-titulo">
+
+            <div class="wrap-content">
+
+                <ion-item class="itemRegister">
+                    <ion-label position="floating">Nombre Alumno</ion-label>
+                    <ion-input type="text" [(ngModel)]="nomAlumn" name="nomAlumn" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Apellido Alumno</ion-label>
+                    <ion-input type="text" [(ngModel)]="apeAlumn" name="apeAlumn" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Curso Alumno</ion-label>
+                    <ion-select id="cursoAlumn" placeholder="Seleccione Curso" [(ngModel)]="cursoAlumn"
+                        name="cursoAlumn" required>
+                        <ion-select-option  value="Primero A" >Primero A</ion-select-option>
+                        <ion-select-option  value="Primero B" >Primero B</ion-select-option>
+                        <ion-select-option  value="Primero C" >Primero C</ion-select-option>
+                        <ion-select-option  value="Primero D" >Primero D</ion-select-option>
+                        <ion-select-option  value="Primero E" >Primero E</ion-select-option>
+                    </ion-select>
+                </ion-item>
+                <br>
+                <ion-item>
+                    <ion-label position="floating">Establecimiento</ion-label>
+                    <ion-input type="text" [(ngModel)]="school" name="school" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Serial</ion-label>
+                    <ion-input type="text" [(ngModel)]="key" name="key" required ></ion-input>
+                </ion-item>
+                <br>
+                <ion-item>
+                    <ion-label position="floating">Nombre Apoderado</ion-label>
+                    <ion-input type="text" [(ngModel)]="nomApod" name="nomApod" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Apellido Apoderado</ion-label>
+                    <ion-input type="text" [(ngModel)]="apeApod" name="apeApod" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Email</ion-label>
+                    <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+                </ion-item>
+                <br>
+                <ion-item>
+                    <ion-label position="floating">Contraseña</ion-label>
+                    <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Confirme Contraseña</ion-label>
+                    <ion-input type="password" [(ngModel)]="passCon" name="passCon" required></ion-input>
+                </ion-item>
+                <br>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="modalDatos" class="modalDatos">
+        <div class="modal-contenido-datos">
+            <div class="divdatos">
+                <h1 class="h1Info" id="h1Info">Ingresa correctamente tus datos</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <item class="itemBtn">
+            <button class="btnSubmit" (click)="OnSubmitRegister()" expand="block" color="tertiary" type="submit" >Registrar</button>
+            <button class="btnBack" routerLink="/login">Volver</button>
+        </item>
+    </footer>
+
+</body>

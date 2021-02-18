@@ -1,0 +1,52 @@
+<ion-header class="headre">
+  <ion-toolbar>
+    <div class="header">
+      <a (click)="backClicked()" class="aBack">
+        <img class="imgBack"
+          src="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/back.png?alt=media&token=18891762-d62e-4ab5-8fa5-c0c3decb3185"
+          alt="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/back.png?alt=media&token=18891762-d62e-4ab5-8fa5-c0c3decb3185">
+      </a>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<body class="background"  >
+  <div class="wrap" style="display: block;" *ngFor="let usuarioReg of arUser">
+    <div class="divMonedas" id="divMonedas" >
+      <img src="../../../assets/coin.gif" alt="" class="imgCoin1">
+      <h1 class="h1Coin" id="h1Coin">{{usuarioReg.coin}}</h1>
+      <img src="../../../assets/coin.gif" alt="" class="imgCoin2">
+    </div>
+    <div class="divRecompensas" id="divRecompensas" *ngFor="let intRecompensa of arDatos" >
+      <div class="btRecomp" id="btRecomp" (click)="fnPullRecompensa(intRecompensa, usuarioReg)">
+        <h1 class="h1recomp" id="h1recomp">{{intRecompensa.recomp}}</h1>
+        <div class="cantCoin">
+          <img src="../../../assets/coin.gif" alt="" class="imgcoinone">
+          <h2 class="h2coin">{{intRecompensa.coins}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modalCoinSuficiente" class="modalCoinSuficiente" (click)="fnPushToHide()">
+    <div class="modal-contenido-coin">
+        <div>
+          <img src="../../../assets/img/gameEnd.png" alt="" class="imgRecom">
+          <h1 class="h1Recom">¡Felicidades!</h1>
+        </div>
+    </div>
+    <div class="divPush">
+      <h1 class="h1push">Pulsa para continuar</h1>
+    </div>
+  </div>
+  <div id="modalCoinInsuficiente" class="modalCoinInsuficiente" (click)="fnPushToHide()">
+    <div class="modal-contenido-coin">
+        <div>
+          <img src="../../../assets/img/SadFace.png" alt="" class="imgRecom">
+          <h1 class="h1Recom">Te faltan monedas</h1>
+        </div>
+    </div>
+    <div class="divPush">
+      <h1 class="h1push">Pulsa para continuar</h1>
+    </div>
+  </div>
+</body>

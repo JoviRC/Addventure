@@ -1,0 +1,269 @@
+.header {
+    display: grid;
+}
+
+.logoHeader {
+    grid-row: 1;
+    height: 40px;
+    width: auto;
+    margin: auto;
+    margin-left: 21%;
+}
+
+.aBack {
+    grid-row: 1;
+    width: 2.5rem;
+    height: auto;
+}
+
+.imgBack {
+    float: left;
+    margin: auto;
+    display: flex;
+}
+
+//--------------------------------------
+
+body {
+    position: relative;
+}
+
+.background {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.wrap {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.rainbow-button {
+    width: calc(90vw + 1px);
+    height: calc(60vw + 1px);
+    background-image: #fff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.rainbow-button:hover {
+    -webkit-animation: jello-horizontal 0.7s both;
+    animation: jello-horizontal 0.7s both;
+}
+
+//------------------------------------- Botones Juegos
+
+.divGames{
+    margin: auto;
+    width: auto;
+}
+
+//-------------------------- Boton Uno
+
+.divGameOne{
+    margin-top: 1em;
+    height: auto;
+    width: 40vh;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.aGameOne{
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.imgGameOne{
+    width: auto;
+    height: 16vh;
+    margin: auto;
+    display: block;
+}
+
+.divGameOne:hover{
+    -webkit-animation: jello-horizontal 0.7s both;
+    animation: jello-horizontal 0.7s both;
+    
+}
+
+//--------------------------- Boton Dos
+
+.divGameTwo{
+    margin-top: 1em;
+    height: auto;
+    width: 40vh;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aGameTwo{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.imgGameTwo{
+    width: auto;
+    height: 16vh;
+    margin: auto;
+    display: block;
+}
+.divGameTwo:hover{
+    -webkit-animation: jello-horizontal 0.7s both;
+    animation: jello-horizontal 0.7s both;
+    
+}
+
+//--------------------------- Boton Tres
+
+.divGameThree{
+    margin-top: 1em;
+    height: auto;
+    width: 40vh;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aGameThree{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.imgGameThree{
+    width: auto;
+    height: 16vh;
+    margin: auto;
+    display: block;
+}
+.divGameThree:hover{
+    -webkit-animation: jello-horizontal 0.7s both;
+    animation: jello-horizontal 0.7s both;
+    
+}
+
+
+
+//-------------------------------------
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    color: rgba(255, 255, 255, 0);
+}
+.imgMision {
+    height: auto;
+    width: 25vh;
+    grid-row: 1;
+    float: left;
+    padding-bottom: 4vh;
+    
+}
+.mision-button{
+    height: auto;
+    width: 25vh;
+    grid-row: 1;
+    float: left;
+    padding: 2vh;
+}
+.mision-button:hover{
+    -webkit-animation: jello-horizontal 0.7s both;
+    animation: jello-horizontal 0.7s both;
+}
+.imgPerfil {
+    height: auto;
+    width: 20vh;
+    grid-row: 2;
+    float: right;
+    padding-right: 5vw;
+}
+.perfil-button{
+    height: auto;
+    width: 20vh;
+    grid-row: 2;
+    float: right;
+    padding-right: 5vw; 
+    padding-top: 2vh;
+}
+
+.perfil-button:hover{
+    -webkit-animation: jello-horizontal 0.7s both;
+    animation: jello-horizontal 0.7s both;
+}
+
+
+//-------------------------------------------------------
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

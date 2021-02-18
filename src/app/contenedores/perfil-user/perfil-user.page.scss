@@ -1,0 +1,323 @@
+body {
+    position: relative;
+}
+
+.background {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding-top: min(1rem) max(5rem);
+}
+
+.header {
+    display: grid;
+}
+
+.logoHeader {
+    grid-row: 1;
+    height: 40px;
+    width: auto;
+    margin: auto;
+    margin-left: 21%;
+}
+
+.aBack {
+    grid-row: 1;
+    width: 2.5rem;
+    height: auto;
+}
+
+.imgBack {
+    float: left;
+    margin: auto;
+    display: flex;
+}
+
+.AHrelleno {
+    grid-row: 1;
+    width: auto;
+
+}
+
+.h2Info {
+    font-size: 6vw;
+    color: rgb(0, 0, 0);
+}
+
+.h3Info {
+    font-size: 5vw;
+    color: #4d4d4d;
+    text-align: left;
+}
+
+.imgAvatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    display: grid;
+}
+
+.divUser {
+    margin: 1rem;
+    border-radius: 1rem;
+    display: grid;
+}
+
+.divInfo {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.divImg {
+    grid-row: start;
+    margin: auto;
+}
+
+.divUserInfo {
+    grid-row: end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.divName {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.h2Nivel {
+    text-align: center;
+    margin: auto;
+}
+
+.h1Nivel {
+    margin: auto;
+    text-align: center;
+}
+
+.h1Name {
+    font-size: 6vw;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.divLevel {
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    padding: 2vh;
+}
+
+.imgMision {
+    height: auto;
+    width: 25vh;
+    grid-row: 1;
+    float: left;
+    padding-bottom: 4vh;
+
+}
+
+.mision-button {
+    height: auto;
+    width: 25vh;
+    grid-row: 1;
+    float: left;
+    padding: 2vh;
+}
+
+.mision-button:hover {
+    -webkit-animation: jello-horizontal 0.5s both;
+    animation: jello-horizontal 0.5s both;
+    transition-delay: 0.6s;
+}
+
+.imgLogOut {
+    height: auto;
+    width: 20vh;
+    grid-row: 2;
+    float: right;
+    padding-right: 5vw;
+}
+
+.logOut-button {
+    height: auto;
+    width: 20vh;
+    grid-row: 2;
+    float: right;
+    padding-right: 5vw;
+    padding-top: 2vh;
+}
+
+.logOut-button:hover {
+    -webkit-animation: jello-horizontal 0.5s both;
+    animation: jello-horizontal 0.5s both;
+}
+
+//---------------------------
+.divRecompensa {
+    display: grid;
+    background-color: rgb(91, 255, 186);
+    margin: auto;
+    width: 90vw;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.divRecompensa:hover {
+    -webkit-animation: jello-horizontal 0.5s both;
+    animation: jello-horizontal 0.5s both;
+}
+
+.imgCoinOne {
+    grid-row: 1;
+    grid-column: 1;
+    height: 5vh;
+    width: auto;
+}
+
+.h3Recompensa {
+    grid-row: 1;
+    grid-column: 2;
+    color: rgb(53, 53, 53);
+}
+
+.imgCoinTwo {
+    grid-row: 1;
+    grid-column: 3;
+    height: 5vh;
+    width: auto;
+}
+
+//---------------------------
+
+.modalClose {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.modal-contenido-close {
+    background-color: #ffffffc0;
+    width: 40vh;
+    padding-top:3vh ;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.h1Confirm {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnYes {
+    margin: auto;
+    height: 6vh;
+    width: 50%;
+    border-bottom-left-radius: 1rem;
+    background-color: #23a6d5;
+    outline: none;
+}
+.h2Si{
+    color: white;
+}
+.h2Si:active{
+    color:#e73c7e ;
+}
+.btnNo {
+    margin: auto;
+    height: 6vh;
+    width: 50%;
+    border-bottom-right-radius: 1rem;
+    background-color: #e73c7e;
+    outline: none;
+}
+.h2No{
+    color: white;
+}
+.h2No:active{
+    color:#23a6d5 ;
+}
+
+//---------------------------
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15vh;
+    color: white;
+}
+
+
+//--------------------------------------
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header">
+      <a (click)="fnConfirmBtnClose()" class="aClose">
+        <img class="imgClose"
+          src="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/close-button.png?alt=media&token=e4446a32-79b4-4571-a888-5883e9b6e6b7"
+          alt="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/close-button.png?alt=media&token=e4446a32-79b4-4571-a888-5883e9b6e6b75">
+      </a>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<body class="background">
+  <div class="wrap">
+    <div class="divConteiner">
+      <div class="divInstruccion" id="IdInstruccion">
+        <h3 class="h3Instruccion" id="h3Instruccion">
+          <!--insercion JS-->
+        </h3>
+        <button class="btnAudio" (click)="fnClickAudio()">
+          <ion-icon id="icoAudio1" name="volume-off" class="icoAudio1"></ion-icon>
+          <ion-icon id="icoAudio2" name="volume-high" class="icoAudio2"></ion-icon>
+        </button>
+      </div>
+      <div class="divEnunciado" id="idEnunciado">
+        <div class="divImg1" id="divImg1">
+          <!--insercion JS-->
+        </div>
+        <div class="divOpe" id="divOpe">
+           <!--insercion JS-->
+        </div>
+        <div class="divImg2" id="divImg2">
+          <!--insercion JS-->
+        </div>
+      </div>
+      <div class="divAlternativas">
+        <button class="btnAleternativa1 btnsAltern" id="btnAleternativa1" (click)="fnBtnOne()">
+          <!--insercion JS-->
+        </button>
+        <button class="btnAleternativa2 btnsAltern" id="btnAleternativa2" (click)="fnBtnTwo()">
+          <!--insercion JS-->
+        </button>
+        <button class="btnAleternativa3 btnsAltern" id="btnAleternativa3" (click)="fnBtnThree()">
+          <!--insercion JS-->
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--Fin wrap-->
+  <div id="modalTrue" class="modal"(click)="fnClickModal()">
+    <div class="modal-contenido">
+      <div class="divCorrecto">
+        <img src="../../../../../assets/coin.gif" alt="" class="coin">
+        <h3 class="h3Coins" id="h3Coins"></h3>
+      </div>
+      <h3 class="tapNext">Pulsa para Continuar</h3>
+    </div>
+  </div>
+  
+  <div id="modalClose" class="modalClose">
+    <div class="modal-contenido-close">
+      <div class="divClose">
+        <h1 class="h1Confirm">¿Salir?</h1>
+      </div>
+      <div class="divBtnClose">
+        <button class="btnYes " (click)="fnBtnModalYes()"><h2 style="color: white; margin: auto;" >Yes</h2></button>
+        <button class="btnNo"  (click)="fnBtnModalNo()"><h2 style="color: white; margin: auto;" >No</h2></button>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header">
+      <a (click)="fnConfirmBtnClose()" class="aClose">
+        <img class="imgClose"
+          src="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/close-button.png?alt=media&token=e4446a32-79b4-4571-a888-5883e9b6e6b7"
+          alt="https://firebasestorage.googleapis.com/v0/b/addventure-81611.appspot.com/o/close-button.png?alt=media&token=e4446a32-79b4-4571-a888-5883e9b6e6b75">
+      </a>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<body class="background">
+  <div class="wrap">
+    <div class="divInfo">
+      <div class="divEtapa">
+        <img class="imgNumLevel" [src]="'../../../../../assets/img/'+currentGame+'.png'">
+        <h3>/</h3>
+        <img class="imgNumTotal" [src]="'../../../../../assets/img/3.png'">
+      </div>
+      <div class="divLevel">
+        <img class="imgLevel" src="../../../../../assets/img/levelThree.png">
+      </div>
+    </div>
+    <div class="divOpera">
+  
+        <img class="imgOperaOne" [src]="'../../../../../assets/img/'+cantOne+'.png'" alt="'img mariquitas'">
+        <h1 class="h1VarOpe">{{varOpe}}</h1>
+        <img class="imgOperaTwo" [src]="'../../../../../assets/img/'+cantTwo+'.png'" alt="'img mariquitas'">
+
+
+    </div>
+    <div class="divAlternativas">
+      <div class="divNumeros">
+        <button id="btnNum" class="nOne nBtn" (click)="this.getNumBtn = 1; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numOne.png"></button>
+        <button id="btnNum" class="nTwo nBtn" (click)="this.getNumBtn = 2; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numTwo.png"></button>
+        <button id="btnNum" class="nThree nBtn" (click)="this.getNumBtn = 3; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numThree.png"></button>
+        <button id="btnNum" class="nFour nBtn" (click)="this.getNumBtn = 4; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numFour.png"></button>
+        <button id="btnNum" class="nFive nBtn" (click)="this.getNumBtn = 5; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numFive.png"></button>
+        <button id="btnNum" class="nSix nBtn" (click)="this.getNumBtn = 6; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numSix.png"></button>
+        <button id="btnNum" class="nSeven nBtn" (click)="this.getNumBtn = 7; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numSeven.png"></button>
+        <button id="btnNum" class="nEigth nBtn" (click)="this.getNumBtn = 8; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numEigth.png"></button>
+        <button id="btnNum" class="nNine nBtn" (click)="this.getNumBtn = 9; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numNine.png"></button>
+        <button id="btnNum" class="nZero nBtn" (click)="this.getNumBtn = 0; fnMain()"><img
+            src="../../../../../assets/imgNumeros/numZero.png"></button>
+      </div>
+    </div>
+  </div>
+  <div id="modalTrue" class="modal">
+    <div class="modal-contenido">
+      <div class="divCorrecto">
+        <img class="imgTrueModal" [src]="'../../../../../assets/img/bueno.png'" alt="'correcto'">
+        <h1 class="h1IgualModal">=</h1>
+        <img class="imgNumModal" [src]="'../../../../../assets/img/'+cantTotal+'.png'" alt="'img num'">
+      </div>
+      <div class="divCoin">
+        <img src="../../../../../assets/coin.gif" alt="" class="coin">
+        <h3 class="h3Coins" id="h3Coins">100</h3>
+      </div>
+    </div>
+  </div>
+  <div id="modalLevelThree" class="modal-level-three">
+    <div class="modal-contenido-three">
+      <img [src]="'../../../../../assets/img/gameEnd.png'" alt="img level up" class="imgLevelThree">
+      <h1 class="h1End">Lo lograste</h1>
+    </div>
+  </div>
+  <div id="modalFalse" class="modal">
+    <div class="modal-contenido">
+      <div class="divCorrecto">
+        <img class="imgTrueModal" [src]="'../../../../../assets/img/mala.png'" alt="'correcto'">
+        <h1 class="h1IgualModal">=</h1>
+        <img class="imgNumModal" [src]="'../../../../../assets/img/'+cantTotal+'.png'" alt="'img num'">
+      </div>
+      <div class="divCoin">
+        <img src="../../../../../assets/coin.gif" alt="" class="coin">
+        <h3 class="h3Coins" id="h3Coins">0</h3>
+      </div>
+    </div>
+  </div>
+  <div id="modalClose" class="modalClose">
+    <div class="modal-contenido-close">
+      <div class="divClose">
+        <h1 class="h1Confirm">¿Salir?</h1>
+      </div>
+      <div class="divBtnClose">
+        <button class="btnYes " (click)="fnBtnModalYes()"><h2 style="color: white; margin: auto;" >Si</h2></button>
+        <button class="btnNo"  (click)="fnBtnModalNo()"><h2 style="color: white; margin: auto;" >No</h2></button>
+      </div>
+    </div>
+  </div>
+</body>

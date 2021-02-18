@@ -1,0 +1,154 @@
+body {
+  position: relative;
+}
+
+.background {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding-top: min(1rem) max(5rem);
+}
+
+.header {
+  display: grid;
+}
+
+.logoHeader {
+  grid-row: 1;
+  height: 40px;
+  width: auto;
+  margin: auto;
+  margin-left: 21%;
+}
+
+.aBack {
+  grid-row: 1;
+  width: 2.5rem;
+  height: auto;
+}
+
+.imgBack {
+  float: left;
+  margin: auto;
+  display: flex;
+}
+
+.divMonedas {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.707) 0%, rgba(252, 70, 107, 0) 45%);
+  height: auto;
+  width: 70vw;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.imgCoin1 {
+  grid-row: 1;
+  grid-column: 1;
+  margin-top: 0;
+  margin-bottom: 1vh;
+  height: 8vh;
+  object-fit: cover;
+}
+
+.h1Coin {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 5vh;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 0;
+  color: #ff9f1a;
+  font-weight: bold;
+}
+
+.imgCoin2 {
+  grid-row: 1;
+  grid-column: 3;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 8vh;
+  object-fit: cover;
+}
+
+.btRecomp {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.529);
+  margin: 5vw;
+  border-radius: 1rem;
+}
+
+.h1recomp {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.cantCoin {
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+}
+
+.imgcoinone {
+  grid-row: 1;
+  grid-column: 1;
+  object-fit: cover;
+  height: 7vh;
+  width: 8vw;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 2vh;
+}
+
+.h2coin {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
